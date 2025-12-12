@@ -1,0 +1,41 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="600" fill="#ffffff"/>
+  
+  <!-- Заголовок -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">
+    Пошук нотаток в графічному інтерфейсі
+  </text>
+  
+  <!-- Вікно додатку -->
+  <rect x="100" y="80" width="800" height="480" fill="#f0f0f0" stroke="#000" stroke-width="2" rx="5"/>
+  
+  <!-- Заголовок вікна -->
+  <rect x="100" y="80" width="800" height="40" fill="#2d2d2d"/>
+  <text x="500" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    SmartNotes
+  </text>
+  
+  <!-- Поле пошуку (виділене) -->
+  <rect x="120" y="150" width="760" height="50" fill="#e3f2fd" stroke="#2196F3" stroke-width="2" rx="3"/>
+  <text x="140" y="175" font-family="Arial, sans-serif" font-size="14" fill="#1976D2">🔍</text>
+  <text x="160" y="185" font-family="Arial, sans-serif" font-size="16" fill="#000" font-weight="bold">звіт</text>
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="12" fill="#999">|</text>
+  
+  <!-- Результати пошуку -->
+  <rect x="120" y="220" width="760" height="300" fill="#ffffff" stroke="#ccc" stroke-width="1" rx="3"/>
+  <text x="130" y="245" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4CAF50">Результати пошуку: "звіт"</text>
+  
+  <!-- Знайдена нотатка -->
+  <rect x="130" y="260" width="740" height="80" fill="#c8e6c9" stroke="#4CAF50" stroke-width="2" rx="3"/>
+  <text x="140" y="285" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#000">Звіт</text>
+  <text x="140" y="310" font-family="Arial, sans-serif" font-size="12" fill="#333">Оновити лаб4</text>
+  <text x="140" y="330" font-family="Arial, sans-serif" font-size="11" fill="#ff9800">Теги: uni, urgent</text>
+  
+  <text x="130" y="380" font-family="Arial, sans-serif" font-size="11" fill="#4CAF50">✓ Знайдено 1 нотатку</text>
+  
+  <!-- Підпис -->
+  <text x="500" y="580" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle" font-style="italic">
+    Рисунок 7 - Пошук нотаток в графічному інтерфейсі
+  </text>
+</svg>
+

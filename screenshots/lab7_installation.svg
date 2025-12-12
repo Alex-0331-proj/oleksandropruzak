@@ -1,0 +1,60 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" fill="#ffffff"/>
+  
+  <!-- Заголовок -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">
+    Встановлення додатку SmartNotes
+  </text>
+  
+  <!-- Термінал -->
+  <rect x="50" y="80" width="800" height="480" fill="#1e1e1e" stroke="#000" stroke-width="2" rx="5"/>
+  
+  <!-- Заголовок терміналу -->
+  <rect x="50" y="80" width="800" height="30" fill="#2d2d2d"/>
+  <circle cx="70" cy="95" r="5" fill="#ff5f56"/>
+  <circle cx="90" cy="95" r="5" fill="#ffbd2e"/>
+  <circle cx="110" cy="95" r="5" fill="#27c93f"/>
+  <text x="140" y="98" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Terminal</text>
+  
+  <!-- Команди -->
+  <text x="60" y="140" font-family="Courier New, monospace" font-size="14" fill="#d4d4d4">
+    $ git clone https://github.com/Alex-0331-proj/oleksandropruzak.git
+  </text>
+  <text x="60" y="170" font-family="Courier New, monospace" font-size="14" fill="#d4d4d4">
+    Cloning into 'oleksandropruzak'...
+  </text>
+  <text x="60" y="200" font-family="Courier New, monospace" font-size="14" fill="#6a9955">
+    ✓ Repository cloned successfully
+  </text>
+  
+  <text x="60" y="250" font-family="Courier New, monospace" font-size="14" fill="#d4d4d4">
+    $ cd oleksandropruzak
+  </text>
+  
+  <text x="60" y="300" font-family="Courier New, monospace" font-size="14" fill="#d4d4d4">
+    $ python -m venv .venv
+  </text>
+  <text x="60" y="330" font-family="Courier New, monospace" font-size="14" fill="#6a9955">
+    ✓ Virtual environment created
+  </text>
+  
+  <text x="60" y="380" font-family="Courier New, monospace" font-size="14" fill="#d4d4d4">
+    $ .venv\Scripts\activate
+  </text>
+  <text x="60" y="410" font-family="Courier New, monospace" font-size="14" fill="#569cd6">
+    (.venv) $ pip install -r requirements.txt
+  </text>
+  <text x="60" y="440" font-family="Courier New, monospace" font-size="14" fill="#6a9955">
+    ✓ Requirements installed successfully
+  </text>
+  
+  <text x="60" y="490" font-family="Courier New, monospace" font-size="14" fill="#ce9178">
+    (.venv) $ python -m smartnotes.gui
+  </text>
+  
+  <!-- Підпис -->
+  <text x="450" y="580" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle" font-style="italic">
+    Рисунок 1 - Процес встановлення додатку SmartNotes
+  </text>
+</svg>
+

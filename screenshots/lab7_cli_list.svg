@@ -1,0 +1,53 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" fill="#ffffff"/>
+  
+  <!-- Заголовок -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">
+    Перегляд списку нотаток
+  </text>
+  
+  <!-- Термінал -->
+  <rect x="50" y="80" width="800" height="480" fill="#1e1e1e" stroke="#000" stroke-width="2" rx="5"/>
+  
+  <!-- Заголовок терміналу -->
+  <rect x="50" y="80" width="800" height="30" fill="#2d2d2d"/>
+  <text x="140" y="98" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Command Prompt</text>
+  
+  <!-- Команда -->
+  <text x="60" y="140" font-family="Courier New, monospace" font-size="14" fill="#ce9178">
+    $ python -m smartnotes.app list
+  </text>
+  
+  <!-- Результат -->
+  <text x="60" y="180" font-family="Courier New, monospace" font-size="14" fill="#d4d4d4">
+    === Список нотаток ===
+  </text>
+  
+  <!-- Нотатка 1 -->
+  <rect x="60" y="200" width="780" height="80" fill="#2d2d2d" stroke="#569cd6" stroke-width="1" rx="3"/>
+  <text x="70" y="220" font-family="Courier New, monospace" font-size="12" fill="#569cd6" font-weight="bold">[1] Звіт</text>
+  <text x="70" y="245" font-family="Courier New, monospace" font-size="11" fill="#d4d4d4">Текст: Оновити лаб4</text>
+  <text x="70" y="265" font-family="Courier New, monospace" font-size="11" fill="#ce9178">Теги: uni, urgent</text>
+  
+  <!-- Нотатка 2 -->
+  <rect x="60" y="290" width="780" height="80" fill="#2d2d2d" stroke="#569cd6" stroke-width="1" rx="3"/>
+  <text x="70" y="310" font-family="Courier New, monospace" font-size="12" fill="#569cd6" font-weight="bold">[2] Купити продукти</text>
+  <text x="70" y="335" font-family="Courier New, monospace" font-size="11" fill="#d4d4d4">Текст: Молоко, хліб, яйця</text>
+  <text x="70" y="355" font-family="Courier New, monospace" font-size="11" fill="#ce9178">Теги: shopping</text>
+  
+  <!-- Нотатка 3 -->
+  <rect x="60" y="380" width="780" height="80" fill="#2d2d2d" stroke="#569cd6" stroke-width="1" rx="3"/>
+  <text x="70" y="400" font-family="Courier New, monospace" font-size="12" fill="#569cd6" font-weight="bold">[3] Зустріч</text>
+  <text x="70" y="425" font-family="Courier New, monospace" font-size="11" fill="#d4d4d4">Текст: Зустріч з командою о 15:00</text>
+  <text x="70" y="445" font-family="Courier New, monospace" font-size="11" fill="#ce9178">Теги: work, meeting</text>
+  
+  <text x="60" y="490" font-family="Courier New, monospace" font-size="14" fill="#6a9955">
+    Всього нотаток: 3
+  </text>
+  
+  <!-- Підпис -->
+  <text x="450" y="580" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle" font-style="italic">
+    Рисунок 3 - Перегляд списку нотаток
+  </text>
+</svg>
+

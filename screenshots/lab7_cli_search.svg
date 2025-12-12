@@ -1,0 +1,42 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="500" fill="#ffffff"/>
+  
+  <!-- Заголовок -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#000000" text-anchor="middle">
+    Пошук нотаток
+  </text>
+  
+  <!-- Термінал -->
+  <rect x="50" y="80" width="800" height="380" fill="#1e1e1e" stroke="#000" stroke-width="2" rx="5"/>
+  
+  <!-- Заголовок терміналу -->
+  <rect x="50" y="80" width="800" height="30" fill="#2d2d2d"/>
+  <text x="140" y="98" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">Command Prompt</text>
+  
+  <!-- Команда -->
+  <text x="60" y="140" font-family="Courier New, monospace" font-size="14" fill="#ce9178">
+    $ python -m smartnotes.app search "звіт"
+  </text>
+  
+  <!-- Результат -->
+  <text x="60" y="180" font-family="Courier New, monospace" font-size="14" fill="#d4d4d4">
+    === Результати пошуку: "звіт" ===
+  </text>
+  
+  <!-- Знайдена нотатка -->
+  <rect x="60" y="200" width="780" height="100" fill="#2d2d2d" stroke="#27c93f" stroke-width="2" rx="3"/>
+  <text x="70" y="225" font-family="Courier New, monospace" font-size="12" fill="#27c93f" font-weight="bold">[1] Звіт</text>
+  <text x="70" y="250" font-family="Courier New, monospace" font-size="11" fill="#d4d4d4">Текст: Оновити лаб4</text>
+  <text x="70" y="270" font-family="Courier New, monospace" font-size="11" fill="#ce9178">Теги: uni, urgent</text>
+  <text x="70" y="290" font-family="Courier New, monospace" font-size="11" fill="#6a9955">✓ Знайдено за ключовим словом "звіт"</text>
+  
+  <text x="60" y="330" font-family="Courier New, monospace" font-size="14" fill="#6a9955">
+    Знайдено нотаток: 1
+  </text>
+  
+  <!-- Підпис -->
+  <text x="450" y="480" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle" font-style="italic">
+    Рисунок 4 - Пошук нотаток
+  </text>
+</svg>
+

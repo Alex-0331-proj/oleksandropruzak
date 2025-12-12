@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №7: Документування програмного забезпечення</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm 1.5cm 2cm 3cm;
+        }
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.5;
+            width: 100%;
+            margin: 0;
+            padding: 2cm 1.5cm 2cm 3cm;
+            background-color: white;
+            font-size: 12pt;
+            text-align: justify;
+        }
+        .title-page {
+            text-align: center;
+            page-break-after: always;
+            padding-top: 6cm;
+        }
+        .title-page h1 {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 1cm;
+            text-transform: uppercase;
+        }
+        .title-page .subtitle {
+            font-size: 12pt;
+            margin-top: 2cm;
+            margin-bottom: 1cm;
+            font-weight: bold;
+        }
+        .title-page .info {
+            font-size: 12pt;
+            margin-top: 5cm;
+            text-align: right;
+        }
+        h1 {
+            font-size: 12pt;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 1.5cm;
+            margin-bottom: 0.5cm;
+            page-break-after: avoid;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 1cm;
+            margin-bottom: 0.5cm;
+            page-break-after: avoid;
+        }
+        h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 0.8cm;
+            margin-bottom: 0.4cm;
+            page-break-after: avoid;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 0.5cm;
+            text-indent: 1.25cm;
+        }
+        .no-indent {
+            text-indent: 0;
+        }
+        .code-block {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 0.4cm;
+            margin: 0.5cm 0;
+            font-family: 'Courier New', monospace;
+            font-size: 10pt;
+            overflow-x: auto;
+            page-break-inside: avoid;
+            white-space: pre-wrap;
+            color: #333;
+            border-radius: 4px;
+        }
+        .screenshot {
+            text-align: center;
+            margin: 1cm 0;
+            page-break-inside: avoid;
+        }
+        .screenshot img {
+            width: 70%;
+            max-width: 70%;
+            height: auto;
+            border: 1px solid #000;
+            display: block;
+            margin: 0 auto;
+            page-break-inside: avoid;
+        }
+        .screenshot p {
+            text-align: center;
+            font-style: italic;
+            margin-top: 0.3cm;
+            font-size: 11pt;
+        }
+        .page-break {
+            page-break-before: always;
+        }
+        ul, ol {
+            margin-bottom: 0.5cm;
+        }
+        li {
+            margin-bottom: 0.3cm;
+        }
+    </style>
+</head>
+<body>
+    <!-- Титульна сторінка -->
+    <div class="title-page">
+        <h1>Лабораторна робота №7</h1>
+        <div class="subtitle">
+            Документування програмного забезпечення
+        </div>
+        <div class="info">
+        </div>
+    </div>
+
+    <!-- Завдання -->
+    <h1 class="page-break">Завдання</h1>
+    
+    <h2>Мета роботи</h2>
+    <p class="no-indent">
+        Отримати навички складання керівництва користувача програмного забезпечення.
+    </p>
+
+    <h2>Завдання роботи</h2>
+    <ol>
+        <li>Створити керівництво користувача для розробленого додатка.</li>
+        <li>Оформити звіт із лабораторної роботи.</li>
+    </ol>
+
+    <!-- Виконане завдання -->
+    <h1 class="page-break">Виконане завдання</h1>
+
+    <h2>1. Керівництво користувача додатку SmartNotes</h2>
+    
+    <h3>1.1. Опис додатку</h3>
+    <p class="no-indent">
+        SmartNotes - це простий додаток для керування нотатками з підтримкою тегів, пошуку та графічного інтерфейсу. 
+        Додаток дозволяє користувачам створювати, переглядати, редагувати та видаляти нотатки, а також організовувати 
+        їх за допомогою тегів та швидкого пошуку.
+    </p>
+
+    <h3>1.2. Вимоги до системи</h3>
+    <p class="no-indent">
+        Для роботи з додатком SmartNotes необхідно:
+    </p>
+    <ul>
+        <li>Python версії 3.11 або новішої</li>
+        <li>Операційна система: Windows, Linux або macOS</li>
+        <li>Для графічного інтерфейсу: Tkinter (зазвичай входить до складу Python)</li>
+    </ul>
+
+    <h3>1.3. Встановлення додатку</h3>
+    
+    <h4>Крок 1: Завантаження</h4>
+    <p class="no-indent">
+        Завантажте або клонуйте репозиторій з GitHub:
+    </p>
+    <div class="code-block">git clone https://github.com/Alex-0331-proj/oleksandropruzak.git
+cd oleksandropruzak</div>
+
+    <h4>Крок 2: Створення віртуального середовища</h4>
+    <p class="no-indent">
+        Створіть віртуальне середовище Python:
+    </p>
+    <div class="code-block">python -m venv .venv</div>
+
+    <h4>Крок 3: Активація віртуального середовища</h4>
+    <p class="no-indent">
+        Для Windows (PowerShell):
+    </p>
+    <div class="code-block">.venv\Scripts\activate</div>
+    <p class="no-indent">
+        Для Linux/Mac:
+    </p>
+    <div class="code-block">source .venv/bin/activate</div>
+
+    <h4>Крок 4: Встановлення залежностей</h4>
+    <p class="no-indent">
+        Встановіть необхідні залежності (якщо вони є):
+    </p>
+    <div class="code-block">pip install -r requirements.txt</div>
+
+    <div class="screenshot">
+        <p>Рисунок 1 - Процес встановлення додатку SmartNotes</p>
+        <img src="screenshots/lab7_installation.svg" alt="Встановлення додатку">
+    </div>
+
+    <h3>1.4. Використання консольного інтерфейсу (CLI)</h3>
+    
+    <h4>1.4.1. Додавання нотатки</h4>
+    <p class="no-indent">
+        Для додавання нової нотатки використовуйте команду:
+    </p>
+    <div class="code-block">python -m smartnotes.app add --title "Назва нотатки" --body "Текст нотатки" --tags тег1 тег2</div>
+    
+    <p class="no-indent">
+        <strong>Приклад:</strong>
+    </p>
+    <div class="code-block">python -m smartnotes.app add --title "Звіт" --body "Оновити лаб4" --tags uni urgent</div>
+
+    <div class="screenshot">
+        <p>Рисунок 2 - Додавання нотатки через консольний інтерфейс</p>
+        <img src="screenshots/lab7_cli_add.svg" alt="Додавання нотатки CLI">
+    </div>
+
+    <h4>1.4.2. Перегляд нотаток</h4>
+    <p class="no-indent">
+        Для перегляду всіх нотаток:
+    </p>
+    <div class="code-block">python -m smartnotes.app list</div>
+    
+    <p class="no-indent">
+        Для перегляду нотаток з певним тегом:
+    </p>
+    <div class="code-block">python -m smartnotes.app list --tag urgent</div>
+
+    <div class="screenshot">
+        <p>Рисунок 3 - Перегляд списку нотаток</p>
+        <img src="screenshots/lab7_cli_list.svg" alt="Список нотаток">
+    </div>
+
+    <h4>1.4.3. Пошук нотаток</h4>
+    <p class="no-indent">
+        Для пошуку нотаток за ключовим словом:
+    </p>
+    <div class="code-block">python -m smartnotes.app search "ключове слово"</div>
+    
+    <p class="no-indent">
+        <strong>Приклад:</strong>
+    </p>
+    <div class="code-block">python -m smartnotes.app search "звіт"</div>
+
+    <div class="screenshot">
+        <p>Рисунок 4 - Пошук нотаток</p>
+        <img src="screenshots/lab7_cli_search.svg" alt="Пошук нотаток">
+    </div>
+
+    <h4>1.4.4. Видалення нотатки</h4>
+    <p class="no-indent">
+        Для видалення нотатки необхідно вказати її ID:
+    </p>
+    <div class="code-block">python -m smartnotes.app delete &lt;note_id&gt;</div>
+    
+    <p class="no-indent">
+        <strong>Приклад:</strong>
+    </p>
+    <div class="code-block">python -m smartnotes.app delete 1</div>
+
+    <h3>1.5. Використання графічного інтерфейсу (GUI)</h3>
+    
+    <h4>1.5.1. Запуск графічного інтерфейсу</h4>
+    <p class="no-indent">
+        Для запуску графічного інтерфейсу виконайте команду:
+    </p>
+    <div class="code-block">python -m smartnotes.gui</div>
+
+    <div class="screenshot">
+        <p>Рисунок 5 - Головне вікно графічного інтерфейсу SmartNotes</p>
+        <img src="screenshots/lab7_gui_main.svg" alt="Головне вікно GUI">
+    </div>
+
+    <h4>1.5.2. Основні функції GUI</h4>
+    
+    <p class="no-indent">
+        <strong>Фільтрація за тегом:</strong> Використовуйте випадаючий список "Фільтр за тегом" для відображення 
+        тільки нотаток з певним тегом. Виберіть тег зі списку або залиште "Всі теги" для перегляду всіх нотаток.
+    </p>
+
+    <div class="screenshot">
+        <p>Рисунок 6 - Фільтрація нотаток за тегом</p>
+        <img src="screenshots/lab7_gui_filter.svg" alt="Фільтрація за тегом">
+    </div>
+
+    <p class="no-indent">
+        <strong>Миттєвий пошук:</strong> Введіть ключове слово в поле "Пошук" для миттєвого пошуку серед нотаток. 
+        Результати відображаються автоматично під час введення тексту.
+    </p>
+
+    <div class="screenshot">
+        <p>Рисунок 7 - Пошук нотаток в графічному інтерфейсі</p>
+        <img src="screenshots/lab7_gui_search.svg" alt="Пошук в GUI">
+    </div>
+
+    <p class="no-indent">
+        <strong>Додавання нотатки:</strong> Натисніть кнопку "Додати" та заповніть форму:
+    </p>
+    <ul>
+        <li>Введіть назву нотатки в поле "Назва"</li>
+        <li>Введіть текст нотатки в поле "Текст"</li>
+        <li>Введіть теги через пробіл в поле "Теги"</li>
+        <li>Натисніть "Зберегти" для збереження нотатки</li>
+    </ul>
+
+    <div class="screenshot">
+        <p>Рисунок 8 - Додавання нової нотатки</p>
+        <img src="screenshots/lab7_gui_add.svg" alt="Додавання нотатки">
+    </div>
+
+    <p class="no-indent">
+        <strong>Редагування нотатки:</strong> Виберіть нотатку зі списку, натисніть "Редагувати", внесіть зміни 
+        та натисніть "Зберегти".
+    </p>
+
+    <div class="screenshot">
+        <p>Рисунок 9 - Редагування нотатки</p>
+        <img src="screenshots/lab7_gui_edit.svg" alt="Редагування нотатки">
+    </div>
+
+    <p class="no-indent">
+        <strong>Видалення нотатки:</strong> Виберіть нотатку зі списку та натисніть кнопку "Видалити". 
+        Підтвердіть видалення у діалоговому вікні.
+    </p>
+
+    <p class="no-indent">
+        <strong>Копіювання тексту:</strong> Виберіть нотатку та натисніть "Копіювати" для копіювання 
+        тексту нотатки в буфер обміну.
+    </p>
+
+    <h3>1.6. Зберігання даних</h3>
+    <p class="no-indent">
+        Всі нотатки автоматично зберігаються у файлі <code>data/notes.json</code>. Файл створюється автоматично 
+        при першому додаванні нотатки. Дані зберігаються у форматі JSON з підтримкою кирилиці.
+    </p>
+
+    <h3>1.7. Приклади використання</h3>
+    
+    <h4>Приклад 1: Створення списку справ</h4>
+    <div class="code-block">python -m smartnotes.app add --title "Купити продукти" --tags shopping
+python -m smartnotes.app add --title "Підготувати звіт" --tags work urgent
+python -m smartnotes.app add --title "Зустріч з командою" --tags work meeting</div>
+
+    <h4>Приклад 2: Пошук робочих нотаток</h4>
+    <div class="code-block">python -m smartnotes.app list --tag work</div>
+
+    <h4>Приклад 3: Пошук за ключовим словом</h4>
+    <div class="code-block">python -m smartnotes.app search "звіт"</div>
+
+    <h3>1.8. Вирішення проблем</h3>
+    
+    <p class="no-indent">
+        <strong>Помилка: "No module named 'smartnotes'"</strong><br>
+        <strong>Рішення:</strong> Переконайтеся, що ви знаходитесь в правильній директорії та активовано віртуальне середовище.
+    </p>
+
+    <p class="no-indent">
+        <strong>Помилка: "File not found: data/notes.json"</strong><br>
+        <strong>Рішення:</strong> Файл створиться автоматично при першому додаванні нотатки. Якщо помилка повторюється, 
+        створіть папку <code>data</code> вручну.
+    </p>
+
+    <p class="no-indent">
+        <strong>GUI не відкривається</strong><br>
+        <strong>Рішення:</strong> Переконайтеся, що встановлено Tkinter (зазвичай входить до складу Python). 
+        Для Linux може знадобитися встановлення: <code>sudo apt-get install python3-tk</code>
+    </p>
+
+    <h2>2. Висновок</h2>
+    <p class="no-indent">
+        Під час виконання лабораторної роботи було створено детальне керівництво користувача для додатку SmartNotes. 
+        Керівництво включає опис додатку, вимоги до системи, інструкції з встановлення, детальні інструкції з 
+        використання консольного та графічного інтерфейсів, приклади використання та розділ з вирішенням проблем.
+    </p>
+    <p class="no-indent">
+        Керівництво користувача оформлено у вигляді HTML-документа з наочними скріншотами та прикладами команд, 
+        що спрощує процес освоєння додатку новими користувачами. Документація покриває всі основні функції додатку 
+        та дозволяє користувачам швидко розпочати роботу з SmartNotes.
+    </p>
+
+</body>
+</html>
