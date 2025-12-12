@@ -1,2 +1,0 @@
-# SmartNotes package
-
